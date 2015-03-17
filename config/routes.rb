@@ -1,14 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'expenses#index'
-
-  get 'expenses/index'
-
-  get 'expenses/create'
-
-  get 'expenses/update'
-
-  get 'expenses/delete'
+  resources :expenses
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

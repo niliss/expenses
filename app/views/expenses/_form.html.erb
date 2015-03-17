@@ -1,0 +1,6 @@
+<%= form_for @expense do |expense| %>
+  <%= expense.text_field :concept %></br>
+  <%= expense.datetime_field :fecha %></br>
+  <%= expense.number_field :amount %> </br>
+  <%= expense.submit %>
+<% end -%>
